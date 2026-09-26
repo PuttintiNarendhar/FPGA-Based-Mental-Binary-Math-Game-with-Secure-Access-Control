@@ -1,5 +1,5 @@
 # FPGA-Based Mental Binary Math Game with Secure Access Control
-### ECE6370 Advanced Digital Design — Lab 4: ROM-Based Game Access Control on FPGA
+### ECE6370 Advanced Digital Design : ROM-Based Game Access Control on FPGA
 
 *Developer:* Narendhar Puttinti  
 *UHID:* 2454090  
