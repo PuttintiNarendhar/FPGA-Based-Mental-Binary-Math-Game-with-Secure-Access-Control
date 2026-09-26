@@ -1,0 +1,644 @@
+|Lab4_PUTTINTI_Narendhar
+Num_Player[0] => Num_Player[0].IN1
+Num_Player[1] => Num_Player[1].IN1
+Num_Player[2] => Num_Player[2].IN1
+Num_Player[3] => Num_Player[3].IN1
+Num_Password[0] => Num_Password[0].IN1
+Num_Password[1] => Num_Password[1].IN1
+Num_Password[2] => Num_Password[2].IN1
+Num_Password[3] => Num_Password[3].IN1
+Button_Player => Button_Player.IN1
+Button_RNG => Button_RNG.IN1
+Button_PasswordorGameEnter => Button_PasswordorGameEnter.IN1
+clk => clk.IN6
+rst => rst.IN6
+Display_Player[0] << Decoder_7seg:Decoder_Player.port1
+Display_Player[1] << Decoder_7seg:Decoder_Player.port1
+Display_Player[2] << Decoder_7seg:Decoder_Player.port1
+Display_Player[3] << Decoder_7seg:Decoder_Player.port1
+Display_Player[4] << Decoder_7seg:Decoder_Player.port1
+Display_Player[5] << Decoder_7seg:Decoder_Player.port1
+Display_Player[6] << Decoder_7seg:Decoder_Player.port1
+Display_RNG[0] << Decoder_7seg:Decoder_RNG.port1
+Display_RNG[1] << Decoder_7seg:Decoder_RNG.port1
+Display_RNG[2] << Decoder_7seg:Decoder_RNG.port1
+Display_RNG[3] << Decoder_7seg:Decoder_RNG.port1
+Display_RNG[4] << Decoder_7seg:Decoder_RNG.port1
+Display_RNG[5] << Decoder_7seg:Decoder_RNG.port1
+Display_RNG[6] << Decoder_7seg:Decoder_RNG.port1
+Display_Sum[0] << Decoder_7seg:Decoder_Sum.port1
+Display_Sum[1] << Decoder_7seg:Decoder_Sum.port1
+Display_Sum[2] << Decoder_7seg:Decoder_Sum.port1
+Display_Sum[3] << Decoder_7seg:Decoder_Sum.port1
+Display_Sum[4] << Decoder_7seg:Decoder_Sum.port1
+Display_Sum[5] << Decoder_7seg:Decoder_Sum.port1
+Display_Sum[6] << Decoder_7seg:Decoder_Sum.port1
+Display_Timer_1s[0] << Decoder_7seg:Decoder_Timer1s.port1
+Display_Timer_1s[1] << Decoder_7seg:Decoder_Timer1s.port1
+Display_Timer_1s[2] << Decoder_7seg:Decoder_Timer1s.port1
+Display_Timer_1s[3] << Decoder_7seg:Decoder_Timer1s.port1
+Display_Timer_1s[4] << Decoder_7seg:Decoder_Timer1s.port1
+Display_Timer_1s[5] << Decoder_7seg:Decoder_Timer1s.port1
+Display_Timer_1s[6] << Decoder_7seg:Decoder_Timer1s.port1
+Display_Timer_10s[0] << Decoder_7seg:Decoder_Timer10s.port1
+Display_Timer_10s[1] << Decoder_7seg:Decoder_Timer10s.port1
+Display_Timer_10s[2] << Decoder_7seg:Decoder_Timer10s.port1
+Display_Timer_10s[3] << Decoder_7seg:Decoder_Timer10s.port1
+Display_Timer_10s[4] << Decoder_7seg:Decoder_Timer10s.port1
+Display_Timer_10s[5] << Decoder_7seg:Decoder_Timer10s.port1
+Display_Timer_10s[6] << Decoder_7seg:Decoder_Timer10s.port1
+Matching << Verify_Sum:DUT_Verify_Sum.port1
+NonMatching << Verify_Sum:DUT_Verify_Sum.port2
+Logged_In << Access_Controller:DUT_Access_Controller.port7
+Logged_Out << Access_Controller:DUT_Access_Controller.port8
+
+
+|Lab4_PUTTINTI_Narendhar|Button_Shaper:DUT_Button_Shaper_Player
+B_In => Selector0.IN1
+B_In => NextState.PULSE.DATAB
+B_In => Selector1.IN2
+B_Out <= B_Out.DB_MAX_OUTPUT_PORT_TYPE
+clk => State~1.DATAIN
+rst => State.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+
+
+|Lab4_PUTTINTI_Narendhar|Button_Shaper:DUT_Button_Shaper_Password
+B_In => Selector0.IN1
+B_In => NextState.PULSE.DATAB
+B_In => Selector1.IN2
+B_Out <= B_Out.DB_MAX_OUTPUT_PORT_TYPE
+clk => State~1.DATAIN
+rst => State.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+
+
+|Lab4_PUTTINTI_Narendhar|Access_Controller:DUT_Access_Controller
+PasswordAndGameEnter => PasswordAndGameEnter.IN2
+PasswordDigit[0] => PasswordDigit[0].IN1
+PasswordDigit[1] => PasswordDigit[1].IN1
+PasswordDigit[2] => PasswordDigit[2].IN1
+PasswordDigit[3] => PasswordDigit[3].IN1
+Load_P_In => Load_P_In.IN1
+RNG_Gen_In => RNG_Gen_In.IN1
+TimeOut => TimeOut.IN1
+clk => clk.IN2
+rst => rst.IN2
+Logged_In <= Authentication:DUT_Authentication.port5
+Logged_Out <= Authentication:DUT_Authentication.port6
+Load_P_Out <= Game_Controller:DUT_Game_Controller.port7
+RNG_Gen_Out <= Game_Controller:DUT_Game_Controller.port8
+Timer_Reconfig <= Game_Controller:DUT_Game_Controller.port9
+Timer_Enable <= Game_Controller:DUT_Game_Controller.port10
+
+
+|Lab4_PUTTINTI_Narendhar|Access_Controller:DUT_Access_Controller|Authentication:DUT_Authentication
+PasswordEnter => PasswordEnter.IN1
+PasswordDigit[0] => PasswordDigit[0].IN1
+PasswordDigit[1] => PasswordDigit[1].IN1
+PasswordDigit[2] => PasswordDigit[2].IN1
+PasswordDigit[3] => PasswordDigit[3].IN1
+LogOutGame => LogOutGame.IN1
+clk => clk.IN2
+rst => rst.IN1
+Logged_In <= ROM_Authentication:DUT_ROM_Authentication.port6
+Logged_Out <= ROM_Authentication:DUT_ROM_Authentication.port7
+Passed <= ROM_Authentication:DUT_ROM_Authentication.port8
+
+
+|Lab4_PUTTINTI_Narendhar|Access_Controller:DUT_Access_Controller|Authentication:DUT_Authentication|ROM_Authentication:DUT_ROM_Authentication
+PasswordEnter => State.DATAB
+PasswordEnter => Selector10.IN2
+PasswordDigit[0] => Equal0.IN3
+PasswordDigit[1] => Equal0.IN2
+PasswordDigit[2] => Equal0.IN1
+PasswordDigit[3] => Equal0.IN0
+ROM_Data[0] => Selector6.IN2
+ROM_Data[1] => Selector5.IN2
+ROM_Data[2] => Selector4.IN2
+ROM_Data[3] => Selector3.IN2
+LogOutGame => Selector9.IN3
+LogOutGame => Selector11.IN1
+clk => Count[0].CLK
+clk => Count[1].CLK
+clk => Store_ROMD[0].CLK
+clk => Store_ROMD[1].CLK
+clk => Store_ROMD[2].CLK
+clk => Store_ROMD[3].CLK
+clk => ROM_Addr[0]~reg0.CLK
+clk => ROM_Addr[1]~reg0.CLK
+clk => ROM_Addr[2]~reg0.CLK
+clk => ROM_Addr[3]~reg0.CLK
+clk => ROM_Addr[4]~reg0.CLK
+clk => SoFarSoGood.CLK
+clk => Passed~reg0.CLK
+clk => Logged_Out~reg0.CLK
+clk => Logged_In~reg0.CLK
+clk => State~1.DATAIN
+rst => Logged_In.OUTPUTSELECT
+rst => Logged_Out.OUTPUTSELECT
+rst => SoFarSoGood.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+rst => ROM_Addr.OUTPUTSELECT
+rst => ROM_Addr.OUTPUTSELECT
+rst => ROM_Addr.OUTPUTSELECT
+rst => ROM_Addr.OUTPUTSELECT
+rst => ROM_Addr.OUTPUTSELECT
+rst => Store_ROMD.OUTPUTSELECT
+rst => Store_ROMD.OUTPUTSELECT
+rst => Store_ROMD.OUTPUTSELECT
+rst => Store_ROMD.OUTPUTSELECT
+rst => Count.OUTPUTSELECT
+rst => Count.OUTPUTSELECT
+Logged_In <= Logged_In~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Logged_Out <= Logged_Out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Passed <= Passed~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ROM_Addr[0] <= ROM_Addr[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ROM_Addr[1] <= ROM_Addr[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ROM_Addr[2] <= ROM_Addr[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ROM_Addr[3] <= ROM_Addr[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ROM_Addr[4] <= ROM_Addr[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4_PUTTINTI_Narendhar|Access_Controller:DUT_Access_Controller|Authentication:DUT_Authentication|ROM_PSWD:DUT_ROM_PSWD
+address[0] => address[0].IN1
+address[1] => address[1].IN1
+address[2] => address[2].IN1
+address[3] => address[3].IN1
+address[4] => address[4].IN1
+clock => clock.IN1
+q[0] <= altsyncram:altsyncram_component.q_a
+q[1] <= altsyncram:altsyncram_component.q_a
+q[2] <= altsyncram:altsyncram_component.q_a
+q[3] <= altsyncram:altsyncram_component.q_a
+
+
+|Lab4_PUTTINTI_Narendhar|Access_Controller:DUT_Access_Controller|Authentication:DUT_Authentication|ROM_PSWD:DUT_ROM_PSWD|altsyncram:altsyncram_component
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_a[1] => ~NO_FANOUT~
+data_a[2] => ~NO_FANOUT~
+data_a[3] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_f3h1:auto_generated.address_a[0]
+address_a[1] => altsyncram_f3h1:auto_generated.address_a[1]
+address_a[2] => altsyncram_f3h1:auto_generated.address_a[2]
+address_a[3] => altsyncram_f3h1:auto_generated.address_a[3]
+address_a[4] => altsyncram_f3h1:auto_generated.address_a[4]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_f3h1:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= altsyncram_f3h1:auto_generated.q_a[0]
+q_a[1] <= altsyncram_f3h1:auto_generated.q_a[1]
+q_a[2] <= altsyncram_f3h1:auto_generated.q_a[2]
+q_a[3] <= altsyncram_f3h1:auto_generated.q_a[3]
+q_b[0] <= <GND>
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|Lab4_PUTTINTI_Narendhar|Access_Controller:DUT_Access_Controller|Authentication:DUT_Authentication|ROM_PSWD:DUT_ROM_PSWD|altsyncram:altsyncram_component|altsyncram_f3h1:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[0] => ram_block1a1.PORTAADDR
+address_a[0] => ram_block1a2.PORTAADDR
+address_a[0] => ram_block1a3.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[1] => ram_block1a1.PORTAADDR1
+address_a[1] => ram_block1a2.PORTAADDR1
+address_a[1] => ram_block1a3.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[2] => ram_block1a1.PORTAADDR2
+address_a[2] => ram_block1a2.PORTAADDR2
+address_a[2] => ram_block1a3.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[3] => ram_block1a1.PORTAADDR3
+address_a[3] => ram_block1a2.PORTAADDR3
+address_a[3] => ram_block1a3.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[4] => ram_block1a1.PORTAADDR4
+address_a[4] => ram_block1a2.PORTAADDR4
+address_a[4] => ram_block1a3.PORTAADDR4
+clock0 => ram_block1a0.CLK0
+clock0 => ram_block1a1.CLK0
+clock0 => ram_block1a2.CLK0
+clock0 => ram_block1a3.CLK0
+q_a[0] <= ram_block1a0.PORTADATAOUT
+q_a[1] <= ram_block1a1.PORTADATAOUT
+q_a[2] <= ram_block1a2.PORTADATAOUT
+q_a[3] <= ram_block1a3.PORTADATAOUT
+
+
+|Lab4_PUTTINTI_Narendhar|Access_Controller:DUT_Access_Controller|Game_Controller:DUT_Game_Controller
+Passed => Selector2.IN3
+Passed => Selector6.IN3
+Passed => Selector1.IN1
+GameEnter => Timer_Enable.OUTPUTSELECT
+GameEnter => Selector4.IN3
+GameEnter => State.DATAA
+GameEnter => Selector3.IN2
+GameEnter => State.DATAA
+Load_P_In => State.OUTPUTSELECT
+Load_P_In => State.OUTPUTSELECT
+Load_P_In => Load_P_Out.DATAB
+Load_P_In => LogOutGame.DATAB
+Load_P_In => Selector6.IN2
+RNG_Gen_In => RNG_Gen_Out.DATAB
+TimeOut => Selector5.IN3
+TimeOut => Selector4.IN1
+clk => LogOutGame~reg0.CLK
+clk => Timer_Enable~reg0.CLK
+clk => Timer_Reconfig~reg0.CLK
+clk => RNG_Gen_Out~reg0.CLK
+clk => Load_P_Out~reg0.CLK
+clk => State~1.DATAIN
+rst => Load_P_Out.OUTPUTSELECT
+rst => RNG_Gen_Out.OUTPUTSELECT
+rst => Timer_Reconfig.OUTPUTSELECT
+rst => Timer_Enable.OUTPUTSELECT
+rst => LogOutGame.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+rst => State.OUTPUTSELECT
+Load_P_Out <= Load_P_Out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RNG_Gen_Out <= RNG_Gen_Out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Timer_Reconfig <= Timer_Reconfig~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Timer_Enable <= Timer_Enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LogOutGame <= LogOutGame~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4_PUTTINTI_Narendhar|LoadRegister:DUT_LoadRegister
+D_in[0] => D_out.DATAB
+D_in[1] => D_out.DATAB
+D_in[2] => D_out.DATAB
+D_in[3] => D_out.DATAB
+D_out[0] <= D_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_out[1] <= D_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_out[2] <= D_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_out[3] <= D_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => D_out[0]~reg0.CLK
+clk => D_out[1]~reg0.CLK
+clk => D_out[2]~reg0.CLK
+clk => D_out[3]~reg0.CLK
+rst => D_out.OUTPUTSELECT
+rst => D_out.OUTPUTSELECT
+rst => D_out.OUTPUTSELECT
+rst => D_out.OUTPUTSELECT
+Load => D_out.OUTPUTSELECT
+Load => D_out.OUTPUTSELECT
+Load => D_out.OUTPUTSELECT
+Load => D_out.OUTPUTSELECT
+
+
+|Lab4_PUTTINTI_Narendhar|RNG:DUT_RNG
+clk => clk.IN1
+rst => rst.IN1
+RNG_Gen => Count.IN1
+Random_Num[0] <= Counter_LFSR:DUT_Counter_LFSR.port3
+Random_Num[1] <= Counter_LFSR:DUT_Counter_LFSR.port3
+Random_Num[2] <= Counter_LFSR:DUT_Counter_LFSR.port3
+Random_Num[3] <= Counter_LFSR:DUT_Counter_LFSR.port3
+
+
+|Lab4_PUTTINTI_Narendhar|RNG:DUT_RNG|Counter_LFSR:DUT_Counter_LFSR
+clk => LFSR[0].CLK
+clk => LFSR[1].CLK
+clk => LFSR[2].CLK
+clk => LFSR[3].CLK
+rst => LFSR.OUTPUTSELECT
+rst => LFSR.OUTPUTSELECT
+rst => LFSR.OUTPUTSELECT
+rst => LFSR.OUTPUTSELECT
+Count => LFSR.OUTPUTSELECT
+Count => LFSR.OUTPUTSELECT
+Count => LFSR.OUTPUTSELECT
+Count => LFSR.OUTPUTSELECT
+Count_Out[0] <= LFSR[0].DB_MAX_OUTPUT_PORT_TYPE
+Count_Out[1] <= LFSR[1].DB_MAX_OUTPUT_PORT_TYPE
+Count_Out[2] <= LFSR[2].DB_MAX_OUTPUT_PORT_TYPE
+Count_Out[3] <= LFSR[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4_PUTTINTI_Narendhar|TwoDigitTimer:DUT_Timer
+Reconfig => Reconfig.IN2
+Timer_Enable => Timer_Enable.IN1
+clk => clk.IN3
+rst => rst.IN3
+TimeOut <= DigitTimer:DUT_DigitTimer_1s.port6
+Digit_1s[0] <= DigitTimer:DUT_DigitTimer_1s.port7
+Digit_1s[1] <= DigitTimer:DUT_DigitTimer_1s.port7
+Digit_1s[2] <= DigitTimer:DUT_DigitTimer_1s.port7
+Digit_1s[3] <= DigitTimer:DUT_DigitTimer_1s.port7
+Digit_10s[0] <= DigitTimer:DUT_DigitTimer_10s.port7
+Digit_10s[1] <= DigitTimer:DUT_DigitTimer_10s.port7
+Digit_10s[2] <= DigitTimer:DUT_DigitTimer_10s.port7
+Digit_10s[3] <= DigitTimer:DUT_DigitTimer_10s.port7
+
+
+|Lab4_PUTTINTI_Narendhar|TwoDigitTimer:DUT_Timer|OneSecTimer:DUT_OneSecTimer
+clk => clk.IN2
+rst => rst.IN2
+enable => enable.IN1
+OneSecTimeOut <= CountTo10:DUT_CountTo10.port3
+
+
+|Lab4_PUTTINTI_Narendhar|TwoDigitTimer:DUT_Timer|OneSecTimer:DUT_OneSecTimer|HundredmsTimer:DUT_HundredmsTimer
+clk => clk.IN2
+rst => rst.IN2
+enable => enable.IN1
+TimeOut_100ms <= CountTo100:DUT_CountTo100.port3
+
+
+|Lab4_PUTTINTI_Narendhar|TwoDigitTimer:DUT_Timer|OneSecTimer:DUT_OneSecTimer|HundredmsTimer:DUT_HundredmsTimer|Timer1ms_LFSR:DUT_Timer1ms_LFSR
+clk => TimeOut_1ms~reg0.CLK
+clk => LFSR[0].CLK
+clk => LFSR[1].CLK
+clk => LFSR[2].CLK
+clk => LFSR[3].CLK
+clk => LFSR[4].CLK
+clk => LFSR[5].CLK
+clk => LFSR[6].CLK
+clk => LFSR[7].CLK
+clk => LFSR[8].CLK
+clk => LFSR[9].CLK
+clk => LFSR[10].CLK
+clk => LFSR[11].CLK
+clk => LFSR[12].CLK
+clk => LFSR[13].CLK
+clk => LFSR[14].CLK
+clk => LFSR[15].CLK
+rst => LFSR.OUTPUTSELECT
+rst => LFSR.OUTPUTSELECT
+rst => LFSR.OUTPUTSELECT
+rst => LFSR.OUTPUTSELECT
+rst => LFSR.OUTPUTSELECT
+rst => LFSR.OUTPUTSELECT
+rst => LFSR.OUTPUTSELECT
+rst => LFSR.OUTPUTSELECT
+rst => LFSR.OUTPUTSELECT
+rst => LFSR.OUTPUTSELECT
+rst => LFSR.OUTPUTSELECT
+rst => LFSR.OUTPUTSELECT
+rst => LFSR.OUTPUTSELECT
+rst => LFSR.OUTPUTSELECT
+rst => LFSR.OUTPUTSELECT
+rst => LFSR.OUTPUTSELECT
+rst => TimeOut_1ms.OUTPUTSELECT
+enable => LFSR.OUTPUTSELECT
+enable => LFSR.OUTPUTSELECT
+enable => LFSR.OUTPUTSELECT
+enable => LFSR.OUTPUTSELECT
+enable => LFSR.OUTPUTSELECT
+enable => LFSR.OUTPUTSELECT
+enable => LFSR.OUTPUTSELECT
+enable => LFSR.OUTPUTSELECT
+enable => LFSR.OUTPUTSELECT
+enable => LFSR.OUTPUTSELECT
+enable => LFSR.OUTPUTSELECT
+enable => LFSR.OUTPUTSELECT
+enable => LFSR.OUTPUTSELECT
+enable => LFSR.OUTPUTSELECT
+enable => LFSR.OUTPUTSELECT
+enable => LFSR.OUTPUTSELECT
+enable => TimeOut_1ms.OUTPUTSELECT
+TimeOut_1ms <= TimeOut_1ms~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4_PUTTINTI_Narendhar|TwoDigitTimer:DUT_Timer|OneSecTimer:DUT_OneSecTimer|HundredmsTimer:DUT_HundredmsTimer|CountTo100:DUT_CountTo100
+clk => TimeOut_100ms~reg0.CLK
+clk => Count[0].CLK
+clk => Count[1].CLK
+clk => Count[2].CLK
+clk => Count[3].CLK
+clk => Count[4].CLK
+clk => Count[5].CLK
+clk => Count[6].CLK
+rst => Count.OUTPUTSELECT
+rst => Count.OUTPUTSELECT
+rst => Count.OUTPUTSELECT
+rst => Count.OUTPUTSELECT
+rst => Count.OUTPUTSELECT
+rst => Count.OUTPUTSELECT
+rst => Count.OUTPUTSELECT
+rst => TimeOut_100ms.OUTPUTSELECT
+TimeIn_1ms => Count.OUTPUTSELECT
+TimeIn_1ms => Count.OUTPUTSELECT
+TimeIn_1ms => Count.OUTPUTSELECT
+TimeIn_1ms => Count.OUTPUTSELECT
+TimeIn_1ms => Count.OUTPUTSELECT
+TimeIn_1ms => Count.OUTPUTSELECT
+TimeIn_1ms => Count.OUTPUTSELECT
+TimeIn_1ms => TimeOut_100ms.OUTPUTSELECT
+TimeOut_100ms <= TimeOut_100ms~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4_PUTTINTI_Narendhar|TwoDigitTimer:DUT_Timer|OneSecTimer:DUT_OneSecTimer|CountTo10:DUT_CountTo10
+clk => TimeOut_1s~reg0.CLK
+clk => Count[0].CLK
+clk => Count[1].CLK
+clk => Count[2].CLK
+clk => Count[3].CLK
+rst => Count.OUTPUTSELECT
+rst => Count.OUTPUTSELECT
+rst => Count.OUTPUTSELECT
+rst => Count.OUTPUTSELECT
+rst => TimeOut_1s.OUTPUTSELECT
+TimeIn_100ms => Count.OUTPUTSELECT
+TimeIn_100ms => Count.OUTPUTSELECT
+TimeIn_100ms => Count.OUTPUTSELECT
+TimeIn_100ms => Count.OUTPUTSELECT
+TimeIn_100ms => TimeOut_1s.OUTPUTSELECT
+TimeOut_1s <= TimeOut_1s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4_PUTTINTI_Narendhar|TwoDigitTimer:DUT_Timer|DigitTimer:DUT_DigitTimer_1s
+Reconfig => DigitCount.OUTPUTSELECT
+Reconfig => DigitCount.OUTPUTSELECT
+Reconfig => DigitCount.OUTPUTSELECT
+Reconfig => DigitCount.OUTPUTSELECT
+Reconfig => BorrowUp.OUTPUTSELECT
+Reconfig => NoBorrowDN.OUTPUTSELECT
+BorrowDN => NoBorrowDN.OUTPUTSELECT
+BorrowDN => BorrowUp.OUTPUTSELECT
+BorrowDN => DigitCount.OUTPUTSELECT
+BorrowDN => DigitCount.OUTPUTSELECT
+BorrowDN => DigitCount.OUTPUTSELECT
+BorrowDN => DigitCount.OUTPUTSELECT
+NoBorrowUp => always0.IN1
+NoBorrowUp => always0.IN1
+clk => NoBorrowDN~reg0.CLK
+clk => BorrowUp~reg0.CLK
+clk => DigitCount[0]~reg0.CLK
+clk => DigitCount[1]~reg0.CLK
+clk => DigitCount[2]~reg0.CLK
+clk => DigitCount[3]~reg0.CLK
+rst => DigitCount.OUTPUTSELECT
+rst => DigitCount.OUTPUTSELECT
+rst => DigitCount.OUTPUTSELECT
+rst => DigitCount.OUTPUTSELECT
+rst => BorrowUp.OUTPUTSELECT
+rst => NoBorrowDN.OUTPUTSELECT
+BorrowUp <= BorrowUp~reg0.DB_MAX_OUTPUT_PORT_TYPE
+NoBorrowDN <= NoBorrowDN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DigitCount[0] <= DigitCount[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DigitCount[1] <= DigitCount[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DigitCount[2] <= DigitCount[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DigitCount[3] <= DigitCount[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4_PUTTINTI_Narendhar|TwoDigitTimer:DUT_Timer|DigitTimer:DUT_DigitTimer_10s
+Reconfig => DigitCount.OUTPUTSELECT
+Reconfig => DigitCount.OUTPUTSELECT
+Reconfig => DigitCount.OUTPUTSELECT
+Reconfig => DigitCount.OUTPUTSELECT
+Reconfig => BorrowUp.OUTPUTSELECT
+Reconfig => NoBorrowDN.OUTPUTSELECT
+BorrowDN => NoBorrowDN.OUTPUTSELECT
+BorrowDN => BorrowUp.OUTPUTSELECT
+BorrowDN => DigitCount.OUTPUTSELECT
+BorrowDN => DigitCount.OUTPUTSELECT
+BorrowDN => DigitCount.OUTPUTSELECT
+BorrowDN => DigitCount.OUTPUTSELECT
+NoBorrowUp => always0.IN1
+NoBorrowUp => always0.IN1
+clk => NoBorrowDN~reg0.CLK
+clk => BorrowUp~reg0.CLK
+clk => DigitCount[0]~reg0.CLK
+clk => DigitCount[1]~reg0.CLK
+clk => DigitCount[2]~reg0.CLK
+clk => DigitCount[3]~reg0.CLK
+rst => DigitCount.OUTPUTSELECT
+rst => DigitCount.OUTPUTSELECT
+rst => DigitCount.OUTPUTSELECT
+rst => DigitCount.OUTPUTSELECT
+rst => BorrowUp.OUTPUTSELECT
+rst => NoBorrowDN.OUTPUTSELECT
+BorrowUp <= BorrowUp~reg0.DB_MAX_OUTPUT_PORT_TYPE
+NoBorrowDN <= NoBorrowDN~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DigitCount[0] <= DigitCount[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DigitCount[1] <= DigitCount[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DigitCount[2] <= DigitCount[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DigitCount[3] <= DigitCount[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4_PUTTINTI_Narendhar|Decoder_7seg:Decoder_Player
+Num_In[0] => Decoder0.IN3
+Num_In[1] => Decoder0.IN2
+Num_In[2] => Decoder0.IN1
+Num_In[3] => Decoder0.IN0
+Num_Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4_PUTTINTI_Narendhar|Decoder_7seg:Decoder_RNG
+Num_In[0] => Decoder0.IN3
+Num_In[1] => Decoder0.IN2
+Num_In[2] => Decoder0.IN1
+Num_In[3] => Decoder0.IN0
+Num_Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4_PUTTINTI_Narendhar|Decoder_7seg:Decoder_Timer1s
+Num_In[0] => Decoder0.IN3
+Num_In[1] => Decoder0.IN2
+Num_In[2] => Decoder0.IN1
+Num_In[3] => Decoder0.IN0
+Num_Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4_PUTTINTI_Narendhar|Decoder_7seg:Decoder_Timer10s
+Num_In[0] => Decoder0.IN3
+Num_In[1] => Decoder0.IN2
+Num_In[2] => Decoder0.IN1
+Num_In[3] => Decoder0.IN0
+Num_Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4_PUTTINTI_Narendhar|Adder:Adder_Sum
+Num1[0] => Add0.IN4
+Num1[1] => Add0.IN3
+Num1[2] => Add0.IN2
+Num1[3] => Add0.IN1
+Num2[0] => Add0.IN8
+Num2[1] => Add0.IN7
+Num2[2] => Add0.IN6
+Num2[3] => Add0.IN5
+Sum[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+Sum[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+Sum[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+Sum[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4_PUTTINTI_Narendhar|Decoder_7seg:Decoder_Sum
+Num_In[0] => Decoder0.IN3
+Num_In[1] => Decoder0.IN2
+Num_In[2] => Decoder0.IN1
+Num_In[3] => Decoder0.IN0
+Num_Out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Num_Out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab4_PUTTINTI_Narendhar|Verify_Sum:DUT_Verify_Sum
+Sum[0] => Equal0.IN3
+Sum[1] => Equal0.IN2
+Sum[2] => Equal0.IN1
+Sum[3] => Equal0.IN0
+Matching <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+NonMatching <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

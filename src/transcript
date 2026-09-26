@@ -1,0 +1,56 @@
+# Compile of Access_Controller.v was successful.
+# Compile of Game_Controller.v was successful.
+# Compile of Authentication.v was successful.
+# Compile of ROM_Authentication.v was successful.
+# Compile of ROM_PSWD.v was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of Access_Controller.v was successful.
+# Compile of Game_Controller.v was successful.
+# Compile of Authentication.v was successful.
+# Compile of ROM_Authentication.v was successful.
+# Compile of ROM_PSWD.v was successful.
+# Compile of Timer1ms_LFSR.v was successful.
+# Compile of HundredmsTimer.v was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of Access_Controller.v was successful.
+# Compile of Game_Controller.v was successful.
+# Compile of Authentication.v was successful.
+# Compile of ROM_Authentication.v was successful.
+# Compile of ROM_PSWD.v was successful.
+# Compile of Lab4_PUTTINTI_Narendhar.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of Access_Controller.v was successful.
+# Compile of Game_Controller.v was successful.
+# Compile of Authentication.v was successful.
+# Compile of ROM_Authentication.v was successful.
+# Compile of ROM_PSWD.v was successful.
+# Compile of Lab4_PUTTINTI_Narendhar.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of Access_Controller.v was successful.
+# Compile of Game_Controller.v was successful.
+# Compile of Authentication.v was successful.
+# Compile of ROM_Authentication.v was successful.
+# Compile of ROM_PSWD.v was successful.
+# Compile of Lab4_PUTTINTI_Narendhar.v was successful.
+# Compile of Counter_LFSR.v was successful.
+# Compile of RNG.v was successful.
+# 8 compiles, 0 failed with no errors.
+# Compile of Access_Controller.v was successful.
+# Compile of Game_Controller.v was successful.
+# Compile of Authentication.v was successful.
+# Compile of ROM_Authentication.v was successful.
+# Compile of ROM_PSWD.v was successful.
+# Compile of Lab4_PUTTINTI_Narendhar.v was successful.
+# Compile of Counter_LFSR.v was successful.
+# Compile of RNG.v was successful.
+# 8 compiles, 0 failed with no errors.
+add wave -position insertpoint {{}}
+# Compile of Access_Controller.v was successful.
+# Compile of Game_Controller.v was successful.
+# Compile of Authentication.v was successful.
+# Compile of ROM_Authentication.v was successful.
+# Compile of ROM_PSWD.v was successful.
+# Compile of Lab4_PUTTINTI_Narendhar.v was successful.
+# Compile of Counter_LFSR.v was successful.
+# Compile of RNG.v was successful.
+# 8 compiles, 0 failed with no errors.

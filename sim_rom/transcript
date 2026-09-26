@@ -1,0 +1,41 @@
+# Compile of ROM_PSWD.v was successful.
+# Compile of ROM_testbench.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.ROM_testbench
+# vsim -gui work.ROM_testbench 
+# Start time: 20:59:27 on Apr 08,2026
+# Loading work.ROM_testbench
+# Loading work.ROM_PSWD
+# ** Error: (vsim-3033) Instantiation of 'altsyncram' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /ROM_testbench/ROM_PSWD_DUT File: C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_rom/ROM_PSWD.v Line: 59
+#         Searched libraries:
+#             C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_rom/work
+# Error loading design
+# End time: 20:59:28 on Apr 08,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 4
+vsim -gui work.ROM_testbench
+# vsim -gui work.ROM_testbench 
+# Start time: 20:59:51 on Apr 08,2026
+# Loading work.ROM_testbench
+# Loading work.ROM_PSWD
+# ** Error: (vsim-3033) Instantiation of 'altsyncram' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /ROM_testbench/ROM_PSWD_DUT File: C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_rom/ROM_PSWD.v Line: 59
+#         Searched libraries:
+#             C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_rom/work
+# Error loading design
+# End time: 20:59:51 on Apr 08,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim -gui work.ROM_testbench -L altera_mf_ver -L altera_mf
+# vsim -gui work.ROM_testbench -L altera_mf_ver -L altera_mf 
+# Start time: 21:02:24 on Apr 08,2026
+# Loading work.ROM_testbench
+# Loading work.ROM_PSWD
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+add wave sim:/ROM_testbench/*
+run
+run 1500 ns
+# End time: 21:05:27 on Apr 08,2026, Elapsed time: 0:03:03
+# Errors: 0, Warnings: 1

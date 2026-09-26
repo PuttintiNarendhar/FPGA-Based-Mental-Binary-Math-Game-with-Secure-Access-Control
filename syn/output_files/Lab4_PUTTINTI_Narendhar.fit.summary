@@ -1,0 +1,20 @@
+Fitter Status : Successful - Wed Apr  8 12:44:27 2026
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Revision Name : Lab4_PUTTINTI_Narendhar
+Top-level Entity Name : Lab4_PUTTINTI_Narendhar
+Family : Cyclone V
+Device : 5CEBA4F23C7
+Timing Models : Final
+Logic utilization (in ALMs) : 78 / 18,480 ( < 1 % )
+Total registers : 86
+Total pins : 52 / 224 ( 23 % )
+Total virtual pins : 0
+Total block memory bits : 16 / 3,153,920 ( < 1 % )
+Total RAM Blocks : 1 / 308 ( < 1 % )
+Total DSP Blocks : 0 / 66 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

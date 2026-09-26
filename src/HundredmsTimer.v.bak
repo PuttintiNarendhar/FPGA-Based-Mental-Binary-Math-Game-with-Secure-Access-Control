@@ -1,0 +1,14 @@
+//Author: Narendhar Puttinti, PSID: 2454090
+//HundredmsTimer
+//it will count 100 milliseconds
+//if rst is 0 count will be 0
+//it starts counting only if it is enabled
+module HundredmsTimer(clk, rst, enable, TimeOut_100ms);
+   input clk, rst, enable;
+   output TimeOut_100ms;
+   wire TimeOut_1ms;
+
+   Counter_1ms DUT_Counter_1ms (clk, rst, enable, TimeOut_1ms);
+   CountTo100 DUT_CountTo100 (clk, rst, TimeOut_1ms, TimeOut_100ms);
+ 
+endmodule

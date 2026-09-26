@@ -1,0 +1,17 @@
+//Author: Narendhar Puttinti, PSID: 2454090
+//RNG Random Number Generator
+//it instantiates the 4-bit Counter_LFSR, range from 0000 to 1110
+//if rst is 0 Random_Num is 0
+//it is a positive edge triggered System with active low reset
+module RNG(clk, rst, RNG_Gen, Random_Num);
+   input clk, rst, RNG_Gen;
+   output [3:0] Random_Num;
+
+   wire Count;
+  
+   assign Count = ~ RNG_Gen;
+   
+   //Counter DUT_Counter (clk, rst, Count, Random_Num);
+   Counter_LFSR DUT_Counter_LFSR (clk, rst, Count, Random_Num);
+
+endmodule

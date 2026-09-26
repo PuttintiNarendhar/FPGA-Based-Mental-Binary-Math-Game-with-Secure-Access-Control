@@ -1,0 +1,217 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Display_Player[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Player[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Player[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Player[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Player[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Player[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Player[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_RNG[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_RNG[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_RNG[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_RNG[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_RNG[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_RNG[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_RNG[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Sum[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Sum[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Sum[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Sum[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Sum[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Sum[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Sum[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Timer_1s[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Timer_1s[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Timer_1s[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Timer_1s[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Timer_1s[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Timer_1s[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Timer_1s[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Timer_10s[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Timer_10s[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Timer_10s[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Timer_10s[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Timer_10s[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Timer_10s[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Display_Timer_10s[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Matching",
+					"strict" : false
+				},
+				{
+					"name" : "NonMatching",
+					"strict" : false
+				},
+				{
+					"name" : "Logged_In",
+					"strict" : false
+				},
+				{
+					"name" : "Logged_Out",
+					"strict" : false
+				},
+				{
+					"name" : "Num_Player[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "Num_Player[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Num_Player[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Num_Player[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Button_RNG",
+					"strict" : false
+				},
+				{
+					"name" : "Button_Player",
+					"strict" : false
+				},
+				{
+					"name" : "Num_Password[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Num_Password[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Num_Password[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Num_Password[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Button_PasswordorGameEnter",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

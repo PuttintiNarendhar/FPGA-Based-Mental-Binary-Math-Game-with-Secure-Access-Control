@@ -1,0 +1,38 @@
+Quartus Prime Archive log --	C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/syn/Lab4_PUTTINTI_Narendhar.qarlog
+
+Archive:	C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/syn/Lab4_PUTTINTI_Narendhar.qar
+Date:		Wed Apr  8 12:56:47 2026
+Quartus Prime		23.1std.0 Build 991 11/28/2023 SC Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Access_Controller.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Adder.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Authentication.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Button_Shaper.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/CountTo10.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/CountTo100.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Counter_LFSR.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Decoder_7seg.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/DigitTimer.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Game_Controller.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/HundredmsTimer.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Lab4_PUTTINTI_Narendhar.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/LoadRegister.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/OneSecTimer.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/RNG.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/ROM_Authentication.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Timer1ms_LFSR.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/TwoDigitTimer.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Verify_Sum.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/syn/Lab4_PUTTINTI_Narendhar.hex
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/syn/Lab4_PUTTINTI_Narendhar.mif
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/syn/Lab4_PUTTINTI_Narendhar.qpf
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/syn/Lab4_PUTTINTI_Narendhar.qsf
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/syn/ROM_PSWD.qip
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/syn/ROM_PSWD.v
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/syn/ROM_PSWD_bb.v
+c:/intelfpga_lite/23.1std/quartus/bin64/assignment_defaults.qdf
+	======= Total: 27 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

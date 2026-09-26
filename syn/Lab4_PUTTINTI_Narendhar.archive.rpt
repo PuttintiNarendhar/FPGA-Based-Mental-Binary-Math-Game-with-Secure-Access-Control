@@ -1,0 +1,122 @@
+Archive Project report for Lab4_PUTTINTI_Narendhar
+Wed Apr  8 12:56:47 2026
+Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Wed Apr  8 12:56:47 2026 ;
+; Revision Name          ; Lab4_PUTTINTI_Narendhar               ;
+; Top-level Entity Name  ; Lab4_PUTTINTI_Narendhar               ;
+; Family                 ; Cyclone V                             ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/syn/Lab4_PUTTINTI_Narendhar.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'Lab4_PUTTINTI_Narendhar.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/23.1std/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4831 megabytes
+    Info: Processing ended: Wed Apr  8 12:56:47 2026
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:00
+
+
++-----------------------------------------------------------------------------------------------+
+; Files Archived                                                                                ;
++-----------------------------------------------------------------------------------------------+
+; File Name                                                                                     ;
++-----------------------------------------------------------------------------------------------+
+; ../src/Access_Controller.v                                                                    ;
+; ../src/Adder.v                                                                                ;
+; ../src/Authentication.v                                                                       ;
+; ../src/Button_Shaper.v                                                                        ;
+; ../src/Counter_LFSR.v                                                                         ;
+; ../src/CountTo10.v                                                                            ;
+; ../src/CountTo100.v                                                                           ;
+; ../src/Decoder_7seg.v                                                                         ;
+; ../src/DigitTimer.v                                                                           ;
+; ../src/Game_Controller.v                                                                      ;
+; ../src/HundredmsTimer.v                                                                       ;
+; ../src/Lab4_PUTTINTI_Narendhar.v                                                              ;
+; ../src/LoadRegister.v                                                                         ;
+; ../src/OneSecTimer.v                                                                          ;
+; ../src/RNG.v                                                                                  ;
+; ../src/ROM_Authentication.v                                                                   ;
+; ../src/Timer1ms_LFSR.v                                                                        ;
+; ../src/TwoDigitTimer.v                                                                        ;
+; ../src/Verify_Sum.v                                                                           ;
+; c:/intelfpga_lite/23.1std/quartus/bin64/assignment_defaults.qdf                               ;
+; C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Access_Controller.v       ;
+; C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Adder.v                   ;
+; C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Authentication.v          ;
+; C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Button_Shaper.v           ;
+; C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Counter_LFSR.v            ;
+; C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/CountTo10.v               ;
+; C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/CountTo100.v              ;
+; C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Decoder_7seg.v            ;
+; C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/DigitTimer.v              ;
+; C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Game_Controller.v         ;
+; C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/HundredmsTimer.v          ;
+; C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Lab4_PUTTINTI_Narendhar.v ;
+; C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/LoadRegister.v            ;
+; C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/OneSecTimer.v             ;
+; C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/RNG.v                     ;
+; C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/ROM_Authentication.v      ;
+; C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Timer1ms_LFSR.v           ;
+; C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/TwoDigitTimer.v           ;
+; C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Verify_Sum.v              ;
+; Lab4_PUTTINTI_Narendhar.hex                                                                   ;
+; Lab4_PUTTINTI_Narendhar.mif                                                                   ;
+; Lab4_PUTTINTI_Narendhar.qpf                                                                   ;
+; Lab4_PUTTINTI_Narendhar.qsf                                                                   ;
+; ROM_PSWD.qip                                                                                  ;
+; ROM_PSWD.v                                                                                    ;
+; ROM_PSWD_bb.v                                                                                 ;
++-----------------------------------------------------------------------------------------------+
+
+

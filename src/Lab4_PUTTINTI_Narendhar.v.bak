@@ -1,0 +1,40 @@
+//ECE6370
+//Author: Narendhar Puttinti, PSID: 2454090
+//Lab3_PUTTINTI_Narendhar
+//top level module that instantiate all the submodules
+//Button_Shaper, Access_Controller, LoadRegister, Adder, Decoder_7seg, TwoDigitTimer, RNG and Verify_Sum modules
+//connects all the submodules and provides abstraction 
+module Lab4_PUTTINTI_Narendhar(Num_Player, Num_Password, Button_Player, Button_RNG, Button_PasswordorGameEnter, clk, rst, 
+Display_Player, Display_RNG, Display_Sum, Display_Timer_1s, Display_Timer_10s, Matching, NonMatching, Logged_In, Logged_Out);
+  input [3:0] Num_Player, Num_Password;
+  input Button_Player, Button_RNG, Button_PasswordorGameEnter, clk, rst;
+  output [6:0] Display_Player, Display_RNG, Display_Sum, Display_Timer_1s, Display_Timer_10s;
+  output Matching, NonMatching, Logged_In, Logged_Out;
+
+  wire [3:0] Sum, Data_Player, Random_Num;
+  wire PasswordorGameEnter, Load_P_Pulse, Load_P_Out, RNG_Gen, Timer_Reconfig, Timer_Enable, TimeOut;
+  wire [3:0] Digit_1s, Digit_10s;
+
+  Button_Shaper DUT_Button_Shaper_Player (Button_Player, Load_P_Pulse, clk, rst);
+  Button_Shaper DUT_Button_Shaper_Password (Button_PasswordorGameEnter, PasswordorGameEnter, clk, rst);
+
+  Access_Controller DUT_Access_Controller (PasswordorGameEnter, Num_Password, Load_P_Pulse, Button_RNG, TimeOut, clk, rst, Logged_In, Logged_Out, Load_P_Out, RNG_Gen, Timer_Reconfig, Timer_Enable);
+
+  LoadRegister DUT_LoadRegister (Num_Player, Data_Player, clk, rst, Load_P_Out);
+ 
+  RNG DUT_RNG (clk, rst, RNG_Gen, Random_Num);
+
+  TwoDigitTimer DUT_Timer (Timer_Reconfig, Timer_Enable, clk, rst, TimeOut, Digit_1s, Digit_10s);
+ 
+  Decoder_7seg Decoder_Player (Data_Player, Display_Player);
+  Decoder_7seg Decoder_RNG (Random_Num, Display_RNG);
+  Decoder_7seg Decoder_Timer1s (Digit_1s, Display_Timer_1s);
+  Decoder_7seg Decoder_Timer10s (Digit_10s, Display_Timer_10s);
+  
+  Adder Adder_Sum (Data_Player, Random_Num, Sum);
+  
+  Decoder_7seg Decoder_Sum (Sum, Display_Sum);
+  
+  Verify_Sum DUT_Verify_Sum (Sum, Matching, NonMatching);
+
+endmodule

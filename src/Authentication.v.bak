@@ -1,0 +1,18 @@
+//Author: Narendhar Puttinti, PSID: 2454090
+//Authentication
+//controls the login and logout by verifing the password entered with the password stored in the ROM
+//there are two modules inside this they are ROM_Authentication and ROM_PSWD
+//it will control game controller module to start or not by the signal called Passed
+module Authentication(PasswordEnter, PasswordDigit, LogOutGame, clk, rst, Logged_In, Logged_Out, Passed);
+   input clk, rst;
+   input PasswordEnter, LogOutGame;
+   input [3:0] PasswordDigit;
+   output Logged_In, Logged_Out, Passed;
+
+   wire [4:0] ROM_Addr;
+   wire [3:0] ROM_Data;
+   
+   ROM_Authentication DUT_ROM_Authentication (PasswordEnter, PasswordDigit, ROM_Data, LogOutGame, clk, rst, Logged_In, Logged_Out, Passed, ROM_Addr);
+   ROM_PSWD DUT_ROM_PSWD (ROM_Addr,clk,ROM_Data);
+
+endmodule

@@ -1,0 +1,52 @@
+//Author: Narendhar Puttinti, PSID: 2454090
+//Timer1ms_LFSR
+//it will counts 50000 clock cycles by using LFSR(Linear Feedback Shift Register)
+//if rst is 0 LFSR is set to all 1's here it is 16 bit FFFF
+//it starts counting only if it is enabled 
+//sets a timeout signal to HIGH and LFSR value to FFFF when it reaches 56172 which is similar to 50000 count
+//it uses LFSR with down counter using XOR gates for feedback terms and initial value is FFFF.
+module Timer1ms_LFSR(clk, rst, enable, TimeOut_1ms);
+   input clk, rst, enable;
+   output TimeOut_1ms;
+   reg TimeOut_1ms;
+
+   reg [15:0] LFSR;
+   wire feedback = LFSR[15];
+
+   always @(posedge clk) begin
+   if(rst == 1'b0) begin
+      LFSR <= 16'hFFFF; // down counter uses x-or gates for feedback terms and initial value is all 1's
+      TimeOut_1ms <= 1'b0;
+   end
+   else if(enable == 1'b1) begin
+      if(LFSR == 16'd56172) begin
+         LFSR <= 16'hFFFF;
+         TimeOut_1ms <= 1'b1;
+      end
+      else begin
+         LFSR[0] <= feedback;
+         LFSR[1] <= LFSR[0];
+         LFSR[2] <= LFSR[1] ^ feedback;
+         LFSR[3] <= LFSR[2] ^ feedback;
+         LFSR[4] <= LFSR[3];
+         LFSR[5] <= LFSR[4] ^ feedback;
+         LFSR[6] <= LFSR[5];
+         LFSR[7] <= LFSR[6];
+         LFSR[8] <= LFSR[7];
+         LFSR[9] <= LFSR[8];
+         LFSR[10] <= LFSR[9];
+         LFSR[11] <= LFSR[10];
+         LFSR[12] <= LFSR[11];
+         LFSR[13] <= LFSR[12];
+         LFSR[14] <= LFSR[13];
+         LFSR[15] <= LFSR[14];
+         TimeOut_1ms <= 1'b0;
+      end
+   end
+   else begin
+         TimeOut_1ms <= 1'b0;
+      end
+   end
+ 
+endmodule
+

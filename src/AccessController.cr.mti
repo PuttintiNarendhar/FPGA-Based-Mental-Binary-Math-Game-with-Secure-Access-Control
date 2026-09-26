@@ -1,0 +1,50 @@
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/ROM_Authentication.v {1 {vlog -work work -stats=none C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/ROM_Authentication.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ROM_Authentication
+
+Top level modules:
+	ROM_Authentication
+
+} {} {}} C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Lab4_PUTTINTI_Narendhar.v {1 {vlog -work work -stats=none C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Lab4_PUTTINTI_Narendhar.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Lab4_PUTTINTI_Narendhar
+
+Top level modules:
+	Lab4_PUTTINTI_Narendhar
+
+} {} {}} C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Access_Controller.v {1 {vlog -work work -stats=none C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Access_Controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Access_Controller
+
+Top level modules:
+	Access_Controller
+
+} {} {}} C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_rom/ROM_PSWD.v {1 {vlog -work work -stats=none C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_rom/ROM_PSWD.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ROM_PSWD
+
+Top level modules:
+	ROM_PSWD
+
+} {} {}} C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Counter_LFSR.v {1 {vlog -work work -stats=none C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Counter_LFSR.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Counter_LFSR
+
+Top level modules:
+	Counter_LFSR
+
+} {} {}} C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/RNG.v {1 {vlog -work work -stats=none C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/RNG.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module RNG
+
+Top level modules:
+	RNG
+
+} {} {}} C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Authentication.v {1 {vlog -work work -stats=none C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Authentication.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Authentication
+
+Top level modules:
+	Authentication
+
+} {} {}}

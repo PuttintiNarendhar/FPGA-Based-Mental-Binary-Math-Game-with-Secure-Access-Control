@@ -1,0 +1,251 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vAccess_Controller
+!s110 1775676706
+!i10b 1
+!s100 Z=3Ef1zU@:g<<QG:8^ajB2
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I<@gMA=^Fek=X?f3F1aCfg2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src
+w1775586563
+8C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Access_Controller.v
+FC:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Access_Controller.v
+!i122 40
+L0 9 12
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z4 !s108 1775676706.000000
+!s107 C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Access_Controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Access_Controller.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@access_@controller
+vAuthentication
+Z7 !s110 1775676707
+!i10b 1
+!s100 iTTPeVSGPUac5H^6IUj3A2
+R0
+IgaTP`VbHjg`2Y@``njldK2
+R1
+R2
+w1775586541
+8C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Authentication.v
+FC:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Authentication.v
+!i122 42
+L0 7 13
+R3
+r1
+!s85 0
+31
+Z8 !s108 1775676707.000000
+!s107 C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Authentication.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Authentication.v|
+!i113 1
+R5
+R6
+n@authentication
+vCounter_LFSR
+R7
+!i10b 1
+!s100 ?7Mi`@kdOX;aVI??c5BLl3
+R0
+IMP1mmi_IPjCBFReDTTikQ3
+R1
+R2
+w1775621991
+8C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Counter_LFSR.v
+FC:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Counter_LFSR.v
+!i122 46
+L0 7 24
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Counter_LFSR.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Counter_LFSR.v|
+!i113 1
+R5
+R6
+n@counter_@l@f@s@r
+vGame_Controller
+R7
+!i10b 1
+!s100 Lj^ZZ5kO@b4A<0C5kM^Ef1
+R0
+IbEd^d3UUOIQChEOElN7D13
+R1
+R2
+w1775621875
+8C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Game_Controller.v
+FC:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Game_Controller.v
+!i122 41
+L0 10 113
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Game_Controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Game_Controller.v|
+!i113 1
+R5
+R6
+n@game_@controller
+vHundredmsTimer
+!s110 1775527684
+!i10b 1
+!s100 g=CkG1NY`6cZ^9hNzPTE^2
+R0
+IU]`<aPC^Ce8]cAoaBXNzP1
+R1
+R2
+w1775527615
+8C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/HundredmsTimer.v
+FC:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/HundredmsTimer.v
+!i122 11
+L0 6 10
+R3
+r1
+!s85 0
+31
+!s108 1775527684.000000
+!s107 C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/HundredmsTimer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/HundredmsTimer.v|
+!i113 1
+R5
+R6
+n@hundredms@timer
+vLab4_PUTTINTI_Narendhar
+R7
+!i10b 1
+!s100 aZb96Q:N6FTAm<DG8[CSn2
+R0
+IDYEPQTc`1DE]jnb:?nmP_2
+R1
+R2
+w1775585257
+8C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Lab4_PUTTINTI_Narendhar.v
+FC:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Lab4_PUTTINTI_Narendhar.v
+!i122 45
+L0 7 34
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Lab4_PUTTINTI_Narendhar.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Lab4_PUTTINTI_Narendhar.v|
+!i113 1
+R5
+R6
+n@lab4_@p@u@t@t@i@n@t@i_@narendhar
+vRNG
+R7
+!i10b 1
+!s100 eDGQV<]5m_0SbGFQL[BNG1
+R0
+I7dU;mKh;VS1G`FO1[IdFP3
+R1
+R2
+w1775621717
+8C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/RNG.v
+FC:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/RNG.v
+!i122 47
+L0 6 12
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/RNG.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/RNG.v|
+!i113 1
+R5
+R6
+n@r@n@g
+vROM_Authentication
+R7
+!i10b 1
+!s100 :aZM4[^JAbiz[^l7fEANj2
+R0
+I2EzFUPz`n0F?j@@l[<lD`1
+R1
+R2
+w1775670118
+8C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/ROM_Authentication.v
+FC:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/ROM_Authentication.v
+!i122 43
+L0 10 134
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/ROM_Authentication.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/ROM_Authentication.v|
+!i113 1
+R5
+R6
+n@r@o@m_@authentication
+vROM_PSWD
+R7
+!i10b 1
+!s100 TQnb[T5i0VTb;Z2IYibCd3
+R0
+IT>K64>kzF8i1_MNUZIYiB0
+R1
+R2
+w1775250410
+8C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_rom/ROM_PSWD.v
+FC:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_rom/ROM_PSWD.v
+!i122 44
+L0 40 66
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_rom/ROM_PSWD.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_rom/ROM_PSWD.v|
+!i113 1
+R5
+R6
+n@r@o@m_@p@s@w@d
+vTimer1ms_LFSR
+!s110 1775527683
+!i10b 1
+!s100 l?z^nCX1SSh8iF1Mjil4^1
+R0
+Ii^NL;aH<U78:VF>0P=D`c2
+R1
+R2
+w1775162574
+8C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Timer1ms_LFSR.v
+FC:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Timer1ms_LFSR.v
+!i122 10
+L0 8 44
+R3
+r1
+!s85 0
+31
+!s108 1775527683.000000
+!s107 C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Timer1ms_LFSR.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/src/Timer1ms_LFSR.v|
+!i113 1
+R5
+R6
+n@timer1ms_@l@f@s@r

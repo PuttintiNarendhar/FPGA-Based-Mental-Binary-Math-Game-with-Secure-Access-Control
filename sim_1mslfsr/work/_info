@@ -1,0 +1,83 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vCounter_1ms
+Z0 !s110 1775160919
+!i10b 1
+!s100 AZ[6@`>cd>Uh@YWXhTOPe2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IlEj?=HZ4zZL]1M`h6RzGP2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_1mslfsr
+w1775160175
+8C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_1mslfsr/Counter_1ms.v
+FC:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_1mslfsr/Counter_1ms.v
+!i122 13
+L0 6 27
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1775160919.000000
+!s107 C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_1mslfsr/Counter_1ms.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_1mslfsr/Counter_1ms.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@counter_1ms
+vtestbench_Timer1ms_LFSR
+R0
+!i10b 1
+!s100 IPUPRJonh29aiHcbMUa?33
+R1
+Ia;Z<67HY?37UI^1[XU@z_3
+R2
+R3
+w1775157844
+8C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_1mslfsr/testbench_Timer1ms_LFSR.v
+FC:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_1mslfsr/testbench_Timer1ms_LFSR.v
+!i122 14
+L0 7 53
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_1mslfsr/testbench_Timer1ms_LFSR.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_1mslfsr/testbench_Timer1ms_LFSR.v|
+!i113 1
+R6
+R7
+ntestbench_@timer1ms_@l@f@s@r
+vTimer1ms_LFSR
+R0
+!i10b 1
+!s100 L>C9Gff0=OUVj8QQi>20n1
+R1
+I=B?`B5K2OLZG;?VEah9Si3
+R2
+R3
+w1775160847
+8C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_1mslfsr/Timer1ms_LFSR.v
+FC:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_1mslfsr/Timer1ms_LFSR.v
+!i122 12
+L0 6 44
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_1mslfsr/Timer1ms_LFSR.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_1mslfsr/Timer1ms_LFSR.v|
+!i113 1
+R6
+R7
+n@timer1ms_@l@f@s@r

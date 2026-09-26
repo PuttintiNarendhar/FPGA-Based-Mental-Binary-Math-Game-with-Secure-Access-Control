@@ -1,0 +1,34 @@
+
+State Machine - |Lab4_PUTTINTI_Narendhar|Access_Controller:DUT_Access_Controller|Game_Controller:DUT_Game_Controller|State
+Name State.LOGOUTWAIT State.GAMEOVER State.GAMEPLAY State.GAMESTART State.RECONFIGTIMER State.INIT 
+State.INIT 0 0 0 0 0 0 
+State.RECONFIGTIMER 0 0 0 0 1 1 
+State.GAMESTART 0 0 0 1 0 1 
+State.GAMEPLAY 0 0 1 0 0 1 
+State.GAMEOVER 0 1 0 0 0 1 
+State.LOGOUTWAIT 1 0 0 0 0 1 
+
+State Machine - |Lab4_PUTTINTI_Narendhar|Access_Controller:DUT_Access_Controller|Authentication:DUT_Authentication|ROM_Authentication:DUT_ROM_Authentication|State
+Name State.SUCCESS State.VERIFY State.CHECK4DIGITS State.COMPARE State.ROMCATCH State.ROMCYC2 State.ROMCYC1 State.FETCHROMWD State.CHECKBUTTON State.INIT 
+State.INIT 0 0 0 0 0 0 0 0 0 0 
+State.CHECKBUTTON 0 0 0 0 0 0 0 0 1 1 
+State.FETCHROMWD 0 0 0 0 0 0 0 1 0 1 
+State.ROMCYC1 0 0 0 0 0 0 1 0 0 1 
+State.ROMCYC2 0 0 0 0 0 1 0 0 0 1 
+State.ROMCATCH 0 0 0 0 1 0 0 0 0 1 
+State.COMPARE 0 0 0 1 0 0 0 0 0 1 
+State.CHECK4DIGITS 0 0 1 0 0 0 0 0 0 1 
+State.VERIFY 0 1 0 0 0 0 0 0 0 1 
+State.SUCCESS 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Lab4_PUTTINTI_Narendhar|Button_Shaper:DUT_Button_Shaper_Password|State
+Name State.INIT State.WAIT State.PULSE 
+State.INIT 0 0 0 
+State.PULSE 1 0 1 
+State.WAIT 1 1 0 
+
+State Machine - |Lab4_PUTTINTI_Narendhar|Button_Shaper:DUT_Button_Shaper_Player|State
+Name State.INIT State.WAIT State.PULSE 
+State.INIT 0 0 0 
+State.PULSE 1 0 1 
+State.WAIT 1 1 0 

@@ -1,0 +1,15 @@
+C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_rom/ROM_PSWD.v {1 {vlog -work work -stats=none C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_rom/ROM_PSWD.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ROM_PSWD
+
+Top level modules:
+	ROM_PSWD
+
+} {} {}} C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_rom/ROM_testbench.v {1 {vlog -work work -stats=none C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_rom/ROM_testbench.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ROM_testbench
+
+Top level modules:
+	ROM_testbench
+
+} {} {}}

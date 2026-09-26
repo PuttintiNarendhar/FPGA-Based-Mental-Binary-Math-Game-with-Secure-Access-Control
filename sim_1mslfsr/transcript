@@ -1,0 +1,72 @@
+# Compile of Timer1ms_LFSR.v was successful.
+# Compile of Counter_1ms.v was successful.
+# Compile of testbench_Timer1ms_LFSR.v failed with 7 errors.
+# 3 compiles, 1 failed with 7 errors.
+# Compile of Timer1ms_LFSR.v was successful.
+# Compile of Counter_1ms.v was successful.
+# Compile of testbench_Timer1ms_LFSR.v failed with 5 errors.
+# 3 compiles, 1 failed with 5 errors.
+# Compile of Timer1ms_LFSR.v was successful.
+# Compile of Counter_1ms.v was successful.
+# Compile of testbench_Timer1ms_LFSR.v failed with 5 errors.
+# 3 compiles, 1 failed with 5 errors.
+# Compile of Timer1ms_LFSR.v was successful.
+# Compile of Counter_1ms.v was successful.
+# Compile of testbench_Timer1ms_LFSR.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.testbench_Timer1ms_LFSR
+# vsim -gui work.testbench_Timer1ms_LFSR 
+# Start time: 14:25:45 on Apr 02,2026
+# Loading work.testbench_Timer1ms_LFSR
+# Loading work.Counter_1ms
+# Loading work.Timer1ms_LFSR
+add wave -r /*
+run
+run
+run -continue
+run
+run -next
+run -all
+# Break key hit
+# Break in Module testbench_Timer1ms_LFSR at C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_1mslfsr/testbench_Timer1ms_LFSR.v line 14
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of Timer1ms_LFSR.v was successful.
+# Compile of Counter_1ms.v was successful.
+# Compile of testbench_Timer1ms_LFSR.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.testbench_Timer1ms_LFSR
+# End time: 15:03:53 on Apr 02,2026, Elapsed time: 0:38:08
+# Errors: 0, Warnings: 13
+# vsim -gui work.testbench_Timer1ms_LFSR 
+# Start time: 15:03:53 on Apr 02,2026
+# Loading work.testbench_Timer1ms_LFSR
+# Loading work.Counter_1ms
+# Loading work.Timer1ms_LFSR
+# Load canceled
+add wave -r /*
+run -all
+# Break key hit
+# Break in Module Timer1ms_LFSR at C:/Users/chima/OneDrive/Desktop/ADD_LAB/Lab4_PUTTINTI_Narendhar/sim_1mslfsr/Timer1ms_LFSR.v line 14
+# Compile of Timer1ms_LFSR.v was successful.
+# Compile of Counter_1ms.v was successful.
+# Compile of testbench_Timer1ms_LFSR.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui work.testbench_Timer1ms_LFSR
+# End time: 15:15:49 on Apr 02,2026, Elapsed time: 0:11:56
+# Errors: 0, Warnings: 2
+# vsim -gui work.testbench_Timer1ms_LFSR 
+# Start time: 15:15:49 on Apr 02,2026
+# Loading work.testbench_Timer1ms_LFSR
+# Loading work.Counter_1ms
+# Loading work.Timer1ms_LFSR
+add wave -r /*
+run -all
+# Break key hit
+# Simulation stop requested.
+# End time: 17:55:43 on Apr 02,2026, Elapsed time: 2:39:54
+# Errors: 0, Warnings: 1

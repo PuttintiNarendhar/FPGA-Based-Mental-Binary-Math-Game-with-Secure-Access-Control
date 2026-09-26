@@ -1,0 +1,20 @@
+//ECE6370
+//Author: Narendhar Puttinti, PSID: 2454090
+//Access_Controller
+//controls the load signals, two digit timer and verifies the password
+//using One-Procedure FSM 
+//if rst is 0 current state is DIGIT1 otherwise Next State
+//it is a positive edge triggered System with active low reset
+//there are two modules inside this they are Authentication and Game_Controller
+module Access_Controller(PasswordAndGameEnter, PasswordDigit, Load_P_In, RNG_Gen_In, TimeOut, clk, rst, Logged_In, Logged_Out, Load_P_Out, RNG_Gen_Out, Timer_Reconfig, Timer_Enable);
+   input clk, rst;
+   input Load_P_In, PasswordAndGameEnter, RNG_Gen_In, TimeOut;
+   input [3:0] PasswordDigit;
+   output Logged_In, Logged_Out, Load_P_Out, RNG_Gen_Out, Timer_Reconfig, Timer_Enable;
+
+   wire Passed, LogOutGame;
+   
+   Authentication DUT_Authentication (PasswordAndGameEnter, PasswordDigit, LogOutGame, clk, rst, Logged_In, Logged_Out, Passed);
+   Game_Controller DUT_Game_Controller (Passed, PasswordAndGameEnter, Load_P_In, RNG_Gen_In, TimeOut, clk, rst, Load_P_Out, RNG_Gen_Out, Timer_Reconfig, Timer_Enable, LogOutGame);
+
+endmodule
